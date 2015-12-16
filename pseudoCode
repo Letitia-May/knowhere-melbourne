@@ -1,0 +1,71 @@
+Use Google Maps JavaScript API in code and customise
+	- create unique key in google developers site
+	- copy code into HTML, CSS and JavaScript
+	- enter key into script tags
+	- change lat and lng to Melbourne
+	- change map width so it does not take up entire body and float right
+
+Create JSON file to store POIs (GeoJSON?)
+	- only 2 initially to test (1000 Pound Bend and Naked for Satan)
+	- include coordinates (lat and lng)
+	- include POI name, tags (e.g. rooftop, brunch), comments
+
+Link JSON file to JS (and html?)
+
+USE JSON VALIDATOR AND JSON GENERATOR
+
+Use a for.each loop to get data for POIs
+
+Display POI markers on map (as small, coloured dots)
+
+Write HTML and CSS for search boxes and comments box
+- comments box hidden until marker clicked on
+
+Write JS function so when a search term is entered the map will display only POIs with matching term (use an if else statement?)
+- filtering results (google maps embed api?)
+- other markers are hidden
+
+Customise style of markers (large and small, different colour for type of tag?)
+
+POI marker to become larger when hovered over with mouse, and to remain large on click (JS and CSS)
+
+On marker click, comments box to appear with POI information
+
+Make responsive (see mobile wireframe for layout)
+
+
+
+Need to look into: 
+
+- can maps tell current location when on mobile? Work out how to search on set map area (e.g. search 'Rooftop' in 'Fitzroy')
+
+- can I share marker data via text, facebook etc
+
+- how can I get map to stay with marker in center for responsive site
+
+
+
+Tags: 
+- Food
+- Drinks
+- Rooftop
+- Brunch
+- Coffee
+- Beer Garden / Outside Seating
+- Activities / Outside
+
+
+
+, 
+	{
+		lat: ,
+		long: ,
+		name: '',
+		type: [''],
+		comments: '',
+		website: ''	
+	}
+
+
+
+

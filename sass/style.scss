@@ -1,0 +1,207 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body, #mapCanvas {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 16px/1.2 'Lato', Helvetica, Arial, sans-serif;
+}
+
+
+/* Map ------- */
+
+#mapCanvas {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Text ------- */
+
+h1, p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+h1 {
+  float: left;
+  letter-spacing: 2px;
+  font-size: 1.25rem; /*20px*/
+
+  @media (max-width: 650px) {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.mainHeading {
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1rem;
+
+  @media (max-width: 300px) {
+    font-size: 0.875rem; /*14px*/ 
+  }
+}
+
+strong {
+  font-weight: bold;
+}
+
+
+/* Header ------- */
+
+label {
+  display: none;
+}
+
+header {
+  padding: 11px 4%;
+  height: 45px;
+
+  @media (max-width: 650px) {
+    padding: 1.5% 4%;
+    height: 90px;
+  }
+
+  div {
+    float: right;
+
+    @media (max-width: 650px) {
+      width: 90%;
+      margin: 0 auto;
+      float: none;
+    }
+
+    form {
+      display: inline-block;
+      padding-left: 10px;
+
+      @media (max-width: 650px) {
+        display: block;
+        padding-left: 0;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.search {
+  @media (max-width: 650px) {
+    margin: 2px 0;
+  }
+}
+
+
+/* Pop Up ------- */
+
+aside {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  padding: 10px;
+  width: 380px;
+  display: none;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  float: right;
+  z-index: 3;
+
+  @media (max-width: 420px) {
+    width: 100%;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.poiContent {
+  border: 1px solid #818785;
+  padding: 10px;
+}
+
+.poiName {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.website {
+  padding-top: 10px;
+  width: 100%;
+}
+
+.descriptors {
+  display: inline-block;
+  width: 50%;
+  padding-right: 10px;
+
+
+  @media (max-width: 300px) {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #818785;
+    padding: 0 0 10px 0;
+  }
+}
+
+.comments {
+  display: inline-block;
+  float: right;
+  width: 50%;
+  padding-left: 10px;
+  border-left: 1px solid #818785;
+
+  @media (max-width: 300px) {
+    width: 100%;
+    padding: 10px 0 0 0;
+    float: none;
+    border-left: 0;
+  }
+}
+
+
+/* Footer (Removed until I can fix height issues) ------- */
+/*
+footer {
+  width: 100%;
+  // min-height: 6.5%;
+  height: 40px;
+  background-color: #818785;
+  overflow: hidden;
+  bottom: 0;
+  left: 0;
+  padding: 8px 4%;
+
+  @media (max-width: 420px) {
+      display: none;
+  }
+
+  img {
+    height: 24px;
+    float: right;
+    padding-left: 40px;
+  }
+}
+*/
+
+
+/* Clear Fix ------- */
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table; }
+
+.cf:after {
+  clear: both; }
+
+.cf {
+  *zoom: 1; }
